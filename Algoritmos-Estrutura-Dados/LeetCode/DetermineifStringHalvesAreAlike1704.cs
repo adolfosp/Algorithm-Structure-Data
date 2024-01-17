@@ -12,30 +12,30 @@ public class DetermineifStringHalvesAreAlike1704
             return false;
         }
 
-        var metade = (s.Length / 2);
-        var vogais = new char[] { 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' };
+        var half = (s.Length / 2);
+        var vowel = new char[] { 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' };
 
-        char[] primeiraParte = new char[metade];
-        char[] segundaParte = new char[metade];
+        char[] firstPart = new char[half];
+        char[] secondPart = new char[half];
 
         var array = s.ToArray();
 
         Array.Copy(sourceArray: array,
                    sourceIndex: 0,
-                   destinationArray: primeiraParte,
+                   destinationArray: firstPart,
                    destinationIndex: 0,
-                   length: metade);
+                   length: half);
 
         Array.Copy(sourceArray: array,
-                   sourceIndex: metade,
-                   destinationArray: segundaParte,
+                   sourceIndex: half,
+                   destinationArray: secondPart,
                    destinationIndex: 0,
-                   length: metade);
+                   length: half);
 
-        var quantidadeVogaisPrimeiraParte = primeiraParte.Count(x => vogais.Contains(x));
-        var quantidadeVogaisSegundaParte = segundaParte.Count(x => vogais.Contains(x));
+        var quantityVowelFirstPart = firstPart.Count(x => vowel.Contains(x));
+        var quantityVowelSecondPart = secondPart.Count(x => vowel.Contains(x));
 
-        return quantidadeVogaisPrimeiraParte == quantidadeVogaisSegundaParte;
+        return quantityVowelFirstPart == quantityVowelSecondPart;
     }
 }
 
