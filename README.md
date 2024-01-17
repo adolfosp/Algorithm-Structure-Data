@@ -1,12 +1,12 @@
 # Algoritmos-Estrutura-Dados
-- Este projeto visa aumentar minhas habilidades em soluções de algoritmos e a definição da complexidade do mesmo usando a notação BIG-O
+- This project aims to increase my skills in algorithm solutions and the definition of its complexity using BIG-O notation
 
-## Introdução
+## Introduction
 
-> Para melhorar meu conhecimento, foi utilizado a plataforma LeetCode para fazer os desafios propostos. A linguagem utilizada foi C#.
+- To improve my knowledge, the LeetCode platform was used to make the proposed challenges. The language used was C#.
 
   
-## Desafios realizados
+## Challenges achieved
 
 - Determine if string halves are alike
   - https://leetcode.com/problems/determine-if-string-halves-are-alike/solutions/4582193/solution-determine-if-string-halves-are-alike/
