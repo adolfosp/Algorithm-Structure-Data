@@ -1,4 +1,4 @@
-﻿namespace Algoritmos_Estrutura_Dados.LeetCode;
+﻿namespace Algoritmos_Estrutura_Dados.LeetCode.DetermineifStringHalvesAreAlike1704;
 
 public class DetermineifStringHalvesAreAlike1704
 {
@@ -12,7 +12,7 @@ public class DetermineifStringHalvesAreAlike1704
             return false;
         }
 
-        var half = (s.Length / 2);
+        var half = s.Length / 2;
         var vowel = new char[] { 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' };
 
         char[] firstPart = new char[half];
