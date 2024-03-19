@@ -1,12 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using Algoritmos_Estrutura_Dados.LeetCode.TwoSum1;
+
 Console.WriteLine("Hello, World!");
 
-int[] array = { 5, 3, 7, 1, 4, 6, 8 };
-BinaryTree tree = new BinaryTree();
+int[] array = { 3, 3 };
 
-foreach (int value in array)
-{
-    tree.Insert(value);
-}
-
-new LeafSimilarTrees872().LeafSimilar(tree.Root);
+Console.Write(new TwoSum1().TwoSum(array, 6));
